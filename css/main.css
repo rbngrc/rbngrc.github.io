@@ -1,0 +1,10 @@
+body{
+    background-color: #f1f3f2;
+}
+
+.center img{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin-left: 25%;
+}
