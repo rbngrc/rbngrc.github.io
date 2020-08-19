@@ -2,15 +2,104 @@
     background-color: #f1f3f2;
 }
 
-.center img{
+.jumbotron {
+    background-image: url("./wallpaper.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #f1f3f2;
+    width: 100%;
+    top: 0px;
     position: relative;
-    width: 40%;
-    height: 40%;
 }
 
-footer{
+#name{
+    max-width: fit-content;
+    display: inline-block;
+    padding-left: 20%;
+}
+
+.img{
+    display: inline-block;
+    max-width: fit-content;
+}
+
+.imgRedonda {
+    display: inline-block;
+    width:200px;
+    height:200px;
+    border-radius:150px;
+}
+
+#acordeones {
+    padding-left: 5%;
+}
+
+.accordion1{
+    /* position: relative; */
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10%;
+}
+
+.accordion2{
+    /* position: relative; */
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10%;
+}
+
+.btn:hover{
+    background-color: #999999;
+}
+
+.btn{
+    width: 100%;
+    text-align: left;
+}
+
+li{
+    list-style-type: none;
+}
+
+#yellow-card{
+    border-left: solid 2px #404044;
+    border-right: solid 2px #404044;
+}
+
+#btn-yellow-text{
+    color: #404044;
+}
+
+#green-card{
+    border-left: solid 2px #404044;
+    border-right: solid 2px #404044;
+}
+
+#btn-green-text{
+    color: #404044;
+}
+
+#red-card{
+    border-left: solid 2px #404044;
+    border-right: solid 2px #404044;
+}
+
+#btn-red-text{
+    color: #404044;
+}
+
+.card-header{
+    background-color: #f1f3f2;
+}
+
+footer {
     color: #f1f3f2;
     position: fixed;
     bottom: 0px;
     width: 100%;
+    text-align-last: center;
 }

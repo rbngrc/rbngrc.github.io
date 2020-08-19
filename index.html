@@ -4,42 +4,345 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruben Garcia</title>
+    <link rel="shortcut icon" href="./assets/profilePic.png"/>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Bienvenido</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" aria-disabled="true">Link 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" aria-disabled="true">Link 2</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#" aria-disabled="true">Link 3</a>
-          </li>
-      </ul>
-    </div>
-  </nav>
 <body class="background-color">
-    <div class="center text-center">
-        <img src="./assets/228315-P2FLEH-27.jpg" alt="Page under construction">
+
+  <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-dark">
+      <div class="container" id="name">
+        <h1 class="display-4">Ruben Garcia</h1>
+        <p class="lead">Software developer</p>
+      </div>
+      <div class="img">
+        <img src="./assets/profilePic.png" class="imgRedonda" alt="Just an ugly man called Ruben">
+      </div>
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+
+  <!-- Descripcion -->
+  <div class="container">
+    <p>I'm a software man</p>
+  </div>
+
+  <!-- Tarjetas Acordeon -->
+  <div class="container row col-12" id="acordeones">
+
+    <!-- Primer acordeon -->
+    <div class="accordion1 row col-6" id="accordionExample">
+
+      <!-- Tarjeta Academic background -->
+      <div class="card"  id="yellow-card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-lg collapsed" id="btn-yellow-text" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ACADEMIC BACKGROUND
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li> 
+                <p>Multiplatform application development</p> 
+                <p>Everis School Valladolid 2021</p> 
+              </li>
+              <hr>
+              <li>
+                <p>Computer System Administration</p> 
+                <p>C.I.F.P Cristo Rey Valladolid 2019</p> 
+              </li>
+              <hr>
+              <li>
+                <p>Architectural proyects development</p>
+                <p>C.I.F.P Rodriguez Fabres Salamanca 2014</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta Professional background -->
+      <div class="card" id="green-card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-lg collapsed" id="btn-green-text" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              PROFESSIONAL BACKGROUND
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li>
+                <p>PostQuam Cosmetics S.L. Cigales</p>
+                <p>IT Responsible 2019 - 2020</p>
+              </li>
+              <hr>
+              <li>
+                <p>AirOn Group (Telefónica) Boecillo</p>
+                <p>Network Technician 2019</p>
+              </li>
+              <hr>
+              <li>
+                <p>Freelance Valladolid 2019</p>
+                  <p>astromonafest.com (currently not deploy)</p>
+                  <p><span><img src="./assets/icons/html.png" alt="HTML" width="30px" height="30px"></span> <span><img src="./assets/icons/bootstrap.png" alt="Bootstrap" width="30px" height="30px"></span></p> 
+                  <p>astromona.com (currently not deploy)</p> 
+                  <p><span><img src="./assets/icons/html.png" alt="HTML" width="30px" height="30px"></span> <span><img src="./assets/icons/bootstrap.png" alt="Bootstrap" width="30px" height="30px"><span> <img src="./assets/icons/php.png" alt="PHP" width="30px" height="30px"></span></span></p>
+              </li>
+              <hr>
+              <li>
+                <p>Poeta iglesias 22 architects Salamanca</p>  
+                <p>Architectural Draftsman 2014 - 2015</p> 
+              </li>
+              <hr>
+              <li>
+                <p>Territorial handball federation of Castilla y León</p> 
+                <p>Handball Referee 2012 - 2013</p> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta Other details -->
+      <div class="card" id="red-card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-lg collapsed" id="btn-red-text" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              OTHER DETAILS
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li>
+                <p>Pilot licence of ultra light aircrafts 2020</p>
+              </li>
+              <hr>
+              <li>
+                <p>Bug Bounty Hunter as hobby in hacker101 and pentesterlab 2020</p>
+              </li>
+              <hr>
+              <li>
+                <p>Bartender at Valladolid regional celebrations 2019</p>
+              </li>
+              <hr>
+              <li>
+                <p>UniMooc Business intelligence Tools 2019</p>
+              </li>
+              <hr>
+              <li>
+                <p>One year of Administration and Business Management degree at UNED 2015</p>
+              </li>
+              <hr>
+              <li>
+                <p>Entrepreneurs initiatives contestant Valladolid Council, Goverment of Castile and Leon and Commercial Chamber of Valladolid 2010</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Segundo Acrodeon -->
+    <div class="accordion2 row col-6" id="accordionExample">
+
+      <!-- Tarjeta Further education -->
+      <div class="card"  id="yellow-card">
+        <div class="card-header" id="heading">
+          <h2 class="mb-0">
+            <button class="btn btn-lg collapsed" id="btn-yellow-text" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              FURTHER EDUCATION
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="heading" data-parent="#accordionExample">
+          <div class="card-body">
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th>Udemy<span><img src="./assets/icons/udemy.png" alt="Udemy" width="auto" height="50px"></span></th>
+                  <th>2020</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Docker</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Ansible</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Web Development: HTML, CSS, JS NodeJS</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Jenkins</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Kubernetes</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Practical Ethical Hacking</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Linux & Windows Privilege Escalation</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Android programming</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Swift and iOS programming</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Unity programming</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Udemy<span><img src="./assets/icons/udemy.png" alt="Udemy" width="auto" height="50px"></span></th>
+                  <th>2019</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Angular advance</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">NodeJS, MongoDB and Angular development</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">JavaScript: Full-Stack</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Advance JavaScript</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Java</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">GIT + GitHub</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Solid Gear Academy <span><img src="./assets/icons/solidgear.svg" alt="Solid Gear Group" width="auto" height="30px"></span></th>
+                  <th>2018</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">SCRUM</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>C.I.F.P Cristo Rey<span><img src="./assets/icons/crey.jpg" alt="Cristo Rey Valladolid" width="auto" height="30px"></span></th>
+                  <th>2018</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="2">Web Accesibility</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta Technicl Skills -->
+      <div class="card" id="green-card">
+        <div class="card-header" id="heading">
+          <h2 class="mb-0">
+            <button class="btn btn-lg collapsed" id="btn-green-text" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse">
+              TECHNICAL SKILLS
+            </button>
+          </h2>
+        </div>
+        <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionExample">
+          <div class="card-body">
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <td><img src="./assets/icons/java.png" alt="Java" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/html.png" alt="HTML" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/css.png" alt="CSS" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/javascript.png" alt="JavaScript" width="30px" height="auto"></td>
+                  <td><img src="./assets/icons/bootstrap.png" alt="Bootstrap" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/php.png" alt="PHP" width="50px" height="50px"></td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/icons/mysql.png" alt="MySQL" width="50px" height="50px"></td>
+                  <td><img src="./assets/icons/xml.png" alt="XML" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/wordpress.png" alt="Wordpress" width="50px" height="50px"></td>
+                  <td><img src="./assets/icons/angular.png" alt="Angular" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/clenguaje.jpg" alt="C" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/c++.jpg" alt="C++" width="40px" height="40px"></td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/icons/android.png" alt="Android" width="50px" height="50px"></td>
+                  <td><img src="./assets/icons/swift.png" alt="Swift" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/unity.png" alt="Unity" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/docker.png" alt="Docker" width="50px" height="50px"></td>
+                  <td><img src="./assets/icons/kubernetes.jpg" alt="Kubernetes" width="auto" height="40px"></td>
+                  <td><img src="./assets/icons/python.png" alt="Python" width="40px" height="40px"></td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/icons/jenkins.png" alt="Jenkins" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/ansible.jpg" alt="Ansible" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/postgresql.png" alt="PostgreSQL" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/mongodb.png" alt="MongoDB" width="50px" height="50px"></td>
+                  <td><img src="./assets/icons/node.jpg" alt="NodeJS" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/express.png" alt="ExpressJS" width="40px" height="40px"></td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/icons/kibana.png" alt="Kibana" width="50px" height="50px"></td>
+                  <td><img src="./assets/icons/graphana.png" alt="Graphana" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/zabbix.png" alt="Zabbix" width="40px" height="40px"></td>
+                  <td><img src="./assets/icons/scrum.png" alt="Scrum" width="40px" height="auto"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta Projects -->
+      <div class="card" id="red-card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-lg collapsed" id="btn-red-text" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              PROJECTS
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="heading" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Prueba</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-<footer class="footer bg-dark text-center">
+
+<!-- Footer -->
+<footer class="footer bg-dark">
     <div class="container">
         <p>
             &copy; Ruben Garcia <script>document.write(new Date().getFullYear())</script>
