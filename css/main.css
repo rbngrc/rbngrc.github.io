@@ -2,6 +2,7 @@
     background-color: #f1f3f2;
 }
 
+/* Jumbotron */
 .jumbotron {
     background-image: url("./wallpaper.jpg");
     background-position: top;
@@ -30,26 +31,25 @@
     border-radius:150px;
 }
 
+/* Estilo de los acordeones y sus tarjetas */
 #acordeones {
     padding-left: 5%;
 }
 
 .accordion1{
-    /* position: relative; */
     display: inline-block;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 20px;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .accordion2{
-    /* position: relative; */
     display: inline-block;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 20px;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .btn:hover{
@@ -96,6 +96,50 @@ li{
     background-color: #f1f3f2;
 }
 
+/* Redes sociales */
+.center {
+    display: table;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+#social-test {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+}
+
+.social {
+    padding-left: 0px;
+}
+
+.social li {
+    display: inline-block;
+}
+
+li a {
+    color: #404044;
+    border-radius: 6px;
+    list-style-type: none;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    padding: 1%;
+    border: 1px solid #404044;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
+}
+li a:hover {
+    color: #999999;
+    border: 1px solid #999999;
+}
+  
+
+/* Footer */
 footer {
     color: #f1f3f2;
     position: fixed;
