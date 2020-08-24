@@ -5,7 +5,7 @@
     $message = $_POST['subject'];
 
 
-    $email_from = 'rbngarcia60@gmail.com'
+    $email_from = 'rbngarcia60@gmail.com';
     $email_subject = "FORMULARIO WEB";
     $email_body = "De: $name - $lastName \n" "Email de contacto: $email \n" "MENSAJE: $message \n" ;
 
