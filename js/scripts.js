@@ -12,7 +12,7 @@ const send = function(ev){
 	const subject = document.getElementById("subject").value
 
 	if (fname === '' || lname === '' || email === '' || subject === '') {
-		alert("Please fill the form")
+		swal("There is no data", "Please fill the form", "error");
 	} else {
 		Email.send({
 			Host: "smtp.elasticemail.com",
@@ -24,7 +24,7 @@ const send = function(ev){
 			Body: `${fname} ${lname} con correo ${email} te ha escrito a la web para decirte: ${subject}`
 		})
 		.then(function (message) {
-			alert("Successfully sent. I will get in touch as soon as possible :)")
+			swal("Successfully sent", "I will get in touch as soon as possible", "success");
 		});
 	}
 
