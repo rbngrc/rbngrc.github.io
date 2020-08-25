@@ -12,7 +12,7 @@ const send = function(ev){
 	const subject = document.getElementById("subject").value
 
 	if (fname === '' || lname === '' || email === '' || subject === '') {
-		swal("There is no data", "Please fill the form", "error");
+		swal("We have some gaps!", "Please fill the form", "error");
 	} else {
 		Email.send({
 			Host: "smtp.elasticemail.com",
