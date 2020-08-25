@@ -21,7 +21,7 @@ const send = function(ev){
 		Body: `${fname} ${lname} con correo ${email} te ha escrito a la web para decirte: ${subject}`
 	})
 	.then(function (message) {
-		alert("Sent successfully. I will get in touch as soon as possible :)")
+		alert("Successfully sent. I will get in touch as soon as possible :)")
 	});
 
 	document.getElementById('contact-form').reset();
