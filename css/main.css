@@ -224,3 +224,9 @@ form{
   .fadeIn {
     animation-name: fadeIn;
   }
+
+  #link {
+      text-decoration: none;
+      border: none;
+      padding-right: -50%;
+  } 
