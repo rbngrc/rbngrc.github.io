@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubén García - @rbngrcdz</title>
+    <title>Rubén García Díez - @rbngrcdz</title>
+    <meta name="description" content="Rubén García Díez — Desarrollador & Asesor en IA. Agentes, RAG, Python. Full Stack: Java, React, Angular, Flutter.">
+    <link rel="icon" href="data:,">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
@@ -15,17 +17,31 @@
   <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-dark">
       <div class="container" id="name">
-        <h1 class="display-4">Rubén García</h1>
-        <p class="lead">Software developer</p>
+        <h1 class="display-4">Rubén García Díez</h1>
+        <p class="lead">Desarrollador &amp; Asesor en IA</p>
+        <p class="subtitle">Agentes · RAG · Python &nbsp;|&nbsp; Full Stack: Java · React · Angular · Flutter</p>
+        <p class="contact-line">
+          <a href="mailto:rubengarciarbngrc@gmail.com">rubengarciarbngrc@gmail.com</a>
+          <span class="dot">·</span> Valladolid, España
+          <span class="dot">·</span> <a href="https://rbngrcdz.com">rbngrcdz.com</a>
+        </p>
       </div>
       <div class="img">
-        <img src="./assets/profilePic.png" class="imgRedonda" alt="Just an ugly man called Ruben">
+        <img src="./assets/profilePic.png" class="imgRedonda" alt="Foto de perfil de Rubén García Díez">
       </div>
     </div>
 
   <!-- Descripcion -->
   <div class="container">
-    <p></p>
+    <p class="perfil-profesional">
+      Desarrollador con más de 4 años de experiencia, especializado en integrar IA y agentes en flujos de trabajo reales.
+      En SOMACYL ejerzo como asesor técnico en IA: evalúo e implanto herramientas y traslado recomendaciones a perfiles
+      directivos y no técnicos. Diseño mis propios flujos agénticos —un pipeline personal en el que un agente recibe
+      tareas por Telegram, las estructura y las delega a un agente de coding— y en el programa Pioneros IA trabajo con
+      pipelines RAG, embeddings e integración de APIs/webhooks. Sobre una base sólida de Python (servicios de datos en
+      NTT DATA, backend de NBA GM Sim) y desarrollo full stack (Java/Spring Boot, React, Angular, Flutter). Cursando el
+      Grado en Ciencia de Datos Aplicada (UOC).
+    </p>
   </div>
 
   <!-- Tarjetas Acordeon -->
@@ -34,43 +50,60 @@
     <!-- Primer acordeon -->
     <div class="accordion1 row col-lg-6" id="accordionExample">
 
-      <!-- Tarjeta Academic background -->
+      <!-- Tarjeta Experiencia profesional -->
       <div class="card"  id="yellow-card">
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
             <button class="btn btn-lg collapsed" id="btn-yellow-text" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              ACADEMIC BACKGROUND
+              EXPERIENCIA PROFESIONAL
             </button>
           </h2>
         </div>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
           <div class="card-body">
             <ul>
-              <li> 
-                <p>Multiplatform application development</p> 
-                <p>Everis School Valladolid 2021</p> 
+              <li>
+                <p class="job-title">SOMACYL — Desarrollador Full Stack, Soporte Tecnológico y Asesor Tecnológico en IA</p>
+                <p class="job-meta">may. 2025 – actualidad · Valladolid · Híbrido</p>
+                <p>Asesoría técnica interna en IA (evaluación e implantación de herramientas para directivos y perfiles no técnicos) y desarrollo de tres aplicaciones internas — GESAPA (Angular + PostGIS/MapLibre), Nami (React + Spring Boot, +12 fuentes oficiales) y Franky (React + Spring Boot + Flyway).</p>
               </li>
               <hr>
               <li>
-                <p>Computer System Administration</p> 
-                <p>C.I.F.P Cristo Rey Valladolid 2019</p> 
+                <p class="job-title">Nido — Programador Full Stack</p>
+                <p class="job-meta">may. 2024 – may. 2025 · España · Remoto</p>
+                <p>Plataforma SaaS para presupuestos de instalaciones de aerotermia. Startup de 6 personas, participación end-to-end: frontend (React/TypeScript), backend (PHP/Symfony) y base de datos.</p>
               </li>
               <hr>
               <li>
-                <p>Architectural proyects development</p>
-                <p>C.I.F.P Rodriguez Fabres Salamanca 2014</p>
+                <p class="job-title">NTT DATA Europe &amp; LATAM — Desarrollador Backend</p>
+                <p class="job-meta">oct. 2021 – may. 2024 · Valladolid · Híbrido</p>
+                <p>Microservicios Java/Spring Boot para banca (Banco Sabadell, BBVA), scripts Python de automatización y pipelines de datos, integración MySQL/MongoDB. Mentoría y supervisión técnica de 2 desarrolladores junior.</p>
+              </li>
+              <hr>
+              <li>
+                <p class="job-title">laligavacceos.com — Desarrollador Web (Proyecto Propio)</p>
+                <a id="link" href="https://laligavacceos.com/auth/acceso" ><img src="./assets/ligaVacceos.png" alt="La liga vacceos" width="auto" height="50px"></a>
+                <p class="job-meta">jun. 2021 – feb. 2022 · Valladolid</p>
+                <p>Plataforma full stack de gestión de ligas de CrossFit: React + Redux Toolkit, backend Express + MySQL, autenticación y hosting en Firebase.</p>
+                <p><span><img src="./assets/icons/react.png" alt="React" width="auto" height="30px"></span></p>
+              </li>
+              <hr>
+              <li>
+                <p class="job-title">AirON Group (Telefónica) — Técnico de Redes Nivel 1</p>
+                <p class="job-meta">mar. 2019 – jul. 2019 · Valladolid</p>
+                <p>Monitorización de producción y resolución de incidencias con Zabbix, Grafana y Kibana, dando soporte internacional a equipos de LATAM y clientes de Telefónica.</p>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- Tarjeta Professional background -->
+      <!-- Tarjeta Proyectos personales -->
       <div class="card" id="green-card">
         <div class="card-header" id="headingTwo">
           <h2 class="mb-0">
             <button class="btn btn-lg collapsed" id="btn-green-text" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              PROFESSIONAL BACKGROUND
+              PROYECTOS PERSONALES
             </button>
           </h2>
         </div>
@@ -78,50 +111,33 @@
           <div class="card-body">
             <ul>
               <li>
-                <p>Junior Arquitect</p>
-                <p>Java Developer Currently</p>
+                <p class="job-title">Utopía — CrossFit &amp; Fitness Tracking App</p>
+                <p class="job-meta">Flutter · Dart · Supabase · PostgreSQL &nbsp;·&nbsp; ago. 2025 – actualidad</p>
+                <p>App móvil multiplataforma (iOS &amp; Android), de cero a publicación en App Store, con +20 usuarios en beta. Clean Architecture con flutter_bloc, backend Supabase (Auth + Edge Functions + RLS), catálogo de 148+ ejercicios y workflow TDD.</p>
               </li>
               <hr>
               <li>
-                <p>Freelance Valladolid 2021</p>
-                <a id="link" href="https://laligavacceos.com/auth/acceso" ><img src="./assets/ligaVacceos.png" alt="La liga vacceos" width="auto" height="50px"></a>
-                <p>la liga Vacceos</p>
-                <p><span><img src="./assets/icons/react.png" alt="React" width="auto" height="30px"></span></p>
+                <p class="job-title">NBA GM Sim — Synergy Builder</p>
+                <p class="job-meta">Python · Flask · nba_api · React &nbsp;·&nbsp; en desarrollo</p>
+                <p>Simulador web para construir rosters al estilo de un General Manager. Backend Flask (OOP, capa de servicios, caché), datos reales vía nba_api, arquitectura multideporte configurable y +20 endpoints REST.</p>
               </li>
               <hr>
               <li>
-                <p>PostQuam Cosmetics S.L. Cigales</p>
-                <p>IT Responsible 2019 - 2020</p>
-              </li>
-              <hr>
-              <li>
-                <p>AirOn Group (Telefónica) Boecillo</p>
-                <p>Network Technician 2019</p>
-              </li>
-              <hr>
-              <li>
-                <p>Freelance Valladolid 2019</p>
-                  <p>astromonafest.com (currently not deploy)</p>
-                  <p><span><img src="./assets/icons/html.png" alt="HTML" width="30px" height="30px"></span> <span><img src="./assets/icons/bootstrap.png" alt="Bootstrap" width="30px" height="30px"></span></p> 
-                  <p>astromona.com (currently not deploy)</p> 
-                  <p><span><img src="./assets/icons/html.png" alt="HTML" width="30px" height="30px"></span> <span><img src="./assets/icons/bootstrap.png" alt="Bootstrap" width="30px" height="30px"><span> <img src="./assets/icons/php.png" alt="PHP" width="30px" height="30px"></span></span></p>
-              </li>
-              <hr>
-              <li>
-                <p>Poeta iglesias 22 architects Salamanca</p>  
-                <p>Architectural Draftsman 2014 - 2015</p> 
+                <p class="job-title">Pipeline Telegram + Hermes</p>
+                <p class="job-meta">Hermes · Telegram Bot · OpenCode CLI · Markdown &nbsp;·&nbsp; 2025 – actualidad</p>
+                <p>Sistema de automatización personal con IA: un agente recibe tareas desde Telegram, las estructura y las delega a un agente de coding (OpenCode CLI) según prioridad. Experimento práctico en orquestación de agentes.</p>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- Tarjeta Other details -->
+      <!-- Tarjeta Formación complementaria -->
       <div class="card" id="red-card">
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
             <button class="btn btn-lg collapsed" id="btn-red-text" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              OTHER DETAILS
+              FORMACIÓN COMPLEMENTARIA Y CERTIFICACIONES
             </button>
           </h2>
         </div>
@@ -129,27 +145,27 @@
           <div class="card-body">
             <ul>
               <li>
-                <p>Pilot licence of ultra light aircrafts 2021</p>
+                <p class="job-title">Pioneros IA — Agentes IA, Automatización y IA Empresarial</p>
+                <p class="job-meta">2025 – 2026 (en curso)</p>
+                <p>Creación de agentes, chatbots, pipelines RAG, integración de APIs/webhooks y automatización de procesos end-to-end.</p>
               </li>
               <hr>
               <li>
-                <p>Bartender at Valladolid regional celebrations 2019</p>
+                <p class="job-title">Udemy — Desarrollo técnico continuo</p>
+                <p class="job-meta">2019 – 2022</p>
+                <p>Spring Framework &amp; Spring Boot · Python avanzado · React avanzado · Java avanzado · Node.js &amp; MongoDB · JavaScript · Git &amp; GitHub.</p>
               </li>
               <hr>
               <li>
-                <p>UniMooc Business intelligence Tools 2019</p>
+                <p>Certificación SCRUM — Solid Gear Academy (2018)</p>
               </li>
               <hr>
               <li>
-                <p>One year of Administration and Business Management degree at UNED 2015</p>
+                <p>Business Intelligence Tools — UniMooc (2019)</p>
               </li>
               <hr>
               <li>
-                <p>Handball Referee 2012 - 2013 at Territorial handball federation of Castilla y León</p> 
-              </li>
-              <hr>
-              <li>
-                <p>Entrepreneurs initiatives contestant Valladolid Council, Goverment of Castile and Leon and Commercial Chamber of Valladolid 2010</p>
+                <p>Idiomas: Español (Nativo) · Inglés — Nivel profesional (C1)</p>
               </li>
             </ul>
           </div>
@@ -160,175 +176,183 @@
   <!-- Segundo Acrodeon -->
     <div class="accordion2 row col-lg-6" id="accordionExample">
 
-      <!-- Tarjeta Further education -->
+      <!-- Tarjeta Formación -->
       <div class="card"  id="yellow-card">
         <div class="card-header" id="heading">
           <h2 class="mb-0">
             <button class="btn btn-lg collapsed" id="btn-yellow-text" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-              FURTHER EDUCATION
+              FORMACIÓN
             </button>
           </h2>
         </div>
         <div id="collapseFour" class="collapse" aria-labelledby="heading" data-parent="#accordionExample">
           <div class="card-body">
-            <table class="table table-hover" aria-rowcount="">
-              <tbody>
-                <tr>
-                  <th></th>
-                  <th>Udemy<span><img src="./assets/icons/udemy.png" alt="Udemy" width="auto" height="50px"></span></th>
-                  <th>2020</th>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">Advance ReactJS</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">Advance VueJS</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">Advance Python programming</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">Web Development: HTML, CSS, JS NodeJS</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">Advance TypeScript</td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th>Udemy<span><img src="./assets/icons/udemy.png" alt="Udemy" width="auto" height="50px"></span></th>
-                  <th>2019</th>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">Angular advance</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">NodeJS, MongoDB and Angular development</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">JavaScript: Full-Stack</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">Advance JavaScript</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">Java</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">GIT + GitHub</td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th>Solid Gear Academy <span><img src="./assets/icons/solidgear.svg" alt="Solid Gear Group" width="auto" height="30px"></span></th>
-                  <th>2018</th>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">SCRUM</td>
-                </tr>
-                <tr>
-                  <th></th>
-                  <th>C.I.F.P Cristo Rey<span><img src="./assets/icons/crey.jpg" alt="Cristo Rey Valladolid" width="auto" height="30px"></span></th>
-                  <th>2018</th>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td colspan="2">Web Accesibility</td>
-                </tr>
-              </tbody>
-            </table>
+            <ul>
+              <li>
+                <p class="job-title">Grado en Ciencia de Datos Aplicada</p>
+                <p class="job-meta">Universitat Oberta de Catalunya (UOC) · sept. 2022 – actualidad</p>
+                <p>Probabilidad y estadística, machine learning, análisis de datos e IA aplicada.</p>
+              </li>
+              <hr>
+              <li>
+                <p class="job-title">CFGS Desarrollo de Aplicaciones Multiplataforma</p>
+                <p class="job-meta">Miteris (Everis School) · 2020 – 2022</p>
+              </li>
+              <hr>
+              <li>
+                <p class="job-title">CFGS Administración de Sistemas Informáticos en Red</p>
+                <p class="job-meta">C.I.F.P. Cristo Rey, Valladolid · 2017 – 2019</p>
+                <p><span><img src="./assets/icons/crey.jpg" alt="Cristo Rey Valladolid" width="auto" height="30px"></span></p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- Tarjeta Technicl Skills -->
+      <!-- Tarjeta Habilidades tecnicas -->
       <div class="card" id="green-card">
         <div class="card-header" id="heading">
           <h2 class="mb-0">
             <button class="btn btn-lg collapsed" id="btn-green-text" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse">
-              TECHNICAL SKILLS
+              HABILIDADES TÉCNICAS
             </button>
           </h2>
         </div>
         <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionExample">
           <div class="card-body">
-            <table class="table table-hover">
-              <tbody>
-                <tr>
-                  <td>Java <img src="./assets/icons/java.png" alt="Java" width="40px" height="40px"></td>
-                  <td>HTML <img src="./assets/icons/html.png" alt="HTML" width="40px" height="40px"></td>
-                  <td>CSS <img src="./assets/icons/css.png" alt="CSS" width="40px" height="40px"></td>
-                  <td>JavaScript <img src="./assets/icons/javascript.png" alt="JavaScript" width="30px" height="auto"></td>
-                  <td>Bootstrap <img src="./assets/icons/bootstrap.png" alt="Bootstrap" width="40px" height="40px"></td>
-                </tr>
-                <tr>
-                  <td>PHP <img src="./assets/icons/php.png" alt="PHP" width="50px" height="50px"></td>
-                  <td>MySql <img src="./assets/icons/mysql.png" alt="MySQL" width="50px" height="50px"></td>
-                  <td>XML <img src="./assets/icons/xml.png" alt="XML" width="40px" height="40px"></td>
-                  <td>Wordpress <img src="./assets/icons/wordpress.png" alt="Wordpress" width="50px" height="50px"></td>
-                  <td>Angular <img src="./assets/icons/angular.png" alt="Angular" width="40px" height="40px"></td>
-                </tr>
-                <tr>
-                  <td>Android <img src="./assets/icons/android.png" alt="Android" width="50px" height="50px"></td>
-                  <td>Python <img src="./assets/icons/python.png" alt="Python" width="40px" height="40px"></td>
-                  <td>PostgreSQL <img src="./assets/icons/postgresql.png" alt="PostgreSQL" width="40px" height="40px"></td>
-                  <td>MongoDB <img src="./assets/icons/mongodb.png" alt="MongoDB" width="50px" height="50px"></td>
-                  <td>NodeJS <img src="./assets/icons/node.jpg" alt="NodeJS" width="40px" height="40px"></td>
-                </tr>
-                <tr>
-                  <td>ExpressJS <img src="./assets/icons/express.png" alt="ExpressJS" width="40px" height="40px"></td>
-                  <td>Kibana <img src="./assets/icons/kibana.png" alt="Kibana" width="50px" height="50px"></td>
-                  <td>Graphana <img src="./assets/icons/graphana.png" alt="Graphana" width="40px" height="40px"></td>
-                  <td>Zabbix <img src="./assets/icons/zabbix.png" alt="Zabbix" width="40px" height="40px"></td>
-                  <td>Scrum <img src="./assets/icons/scrum.png" alt="Scrum" width="40px" height="auto"></td>
-                </tr>
-                <tr>
-                  <td>React <img src="./assets/icons/react.png" alt="React" width="40px" height="40px"></td>
-                  <td>React Native <img src="./assets/icons/react.png" alt="React Native" width="40px" height="40px"></td>
-                </tr>
-              </tbody>
-            </table>
+
+            <p class="skill-category">IA &amp; Agentes</p>
+            <div class="skill-pills">
+              <span class="pill">Agentes IA / orquestación</span>
+              <span class="pill">Prompt Engineering</span>
+              <span class="pill">RAG / Embeddings</span>
+              <span class="pill">APIs y webhooks</span>
+              <span class="pill">Claude Code</span>
+              <span class="pill">Cursor</span>
+            </div>
+
+            <p class="skill-category">Lenguajes</p>
+            <div class="skill-pills">
+              <span class="pill"><img src="./assets/icons/python.png" alt="" width="18" height="18">Python</span>
+              <span class="pill"><img src="./assets/icons/java.png" alt="" width="18" height="18">Java</span>
+              <span class="pill"><img src="./assets/icons/javascript.png" alt="" width="18" height="18">JavaScript</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Dart</span>
+              <span class="pill">SQL</span>
+              <span class="pill"><img src="./assets/icons/php.png" alt="" width="18" height="18">PHP</span>
+              <span class="pill"><img src="./assets/icons/html.png" alt="" width="18" height="18">HTML5</span>
+              <span class="pill"><img src="./assets/icons/css.png" alt="" width="18" height="18">CSS3</span>
+              <span class="pill">YAML</span>
+            </div>
+
+            <p class="skill-category">Frameworks</p>
+            <div class="skill-pills">
+              <span class="pill">Flask</span>
+              <span class="pill">Spring Boot</span>
+              <span class="pill"><img src="./assets/icons/react.png" alt="" width="18" height="18">React</span>
+              <span class="pill"><img src="./assets/icons/angular.png" alt="" width="18" height="18">Angular</span>
+              <span class="pill">Symfony</span>
+              <span class="pill"><img src="./assets/icons/express.png" alt="" width="18" height="18">Express</span>
+              <span class="pill"><img src="./assets/icons/node.jpg" alt="" width="18" height="18">Node.js</span>
+            </div>
+
+            <p class="skill-category">Datos &amp; Backend</p>
+            <div class="skill-pills">
+              <span class="pill"><img src="./assets/icons/postgresql.png" alt="" width="18" height="18">PostgreSQL/PostGIS</span>
+              <span class="pill">Supabase</span>
+              <span class="pill"><img src="./assets/icons/mysql.png" alt="" width="18" height="18">MySQL</span>
+              <span class="pill"><img src="./assets/icons/mongodb.png" alt="" width="18" height="18">MongoDB</span>
+              <span class="pill">Firebase</span>
+              <span class="pill">APIs RESTful</span>
+              <span class="pill">OpenAPI/YAML</span>
+            </div>
+
+            <p class="skill-category">GIS &amp; Mapas</p>
+            <div class="skill-pills">
+              <span class="pill">PostGIS</span>
+              <span class="pill">Hibernate Spatial</span>
+              <span class="pill">MapLibre GL JS</span>
+              <span class="pill">GeoJSON</span>
+              <span class="pill">Leaflet</span>
+            </div>
+
+            <p class="skill-category">Mobile</p>
+            <div class="skill-pills">
+              <span class="pill">Flutter/Dart</span>
+              <span class="pill">RevenueCat</span>
+              <span class="pill">TestFlight</span>
+              <span class="pill">Universal Links</span>
+            </div>
+
+            <p class="skill-category">DevOps &amp; Herramientas</p>
+            <div class="skill-pills">
+              <span class="pill"><img src="./assets/icons/docker.png" alt="" width="18" height="18">Docker Compose</span>
+              <span class="pill">Git/GitHub</span>
+              <span class="pill"><img src="./assets/icons/jenkins.png" alt="" width="18" height="18">Jenkins</span>
+              <span class="pill">Flyway</span>
+              <span class="pill"><img src="./assets/icons/zabbix.png" alt="" width="18" height="18">Zabbix</span>
+              <span class="pill"><img src="./assets/icons/graphana.png" alt="" width="18" height="18">Grafana</span>
+              <span class="pill"><img src="./assets/icons/kibana.png" alt="" width="18" height="18">Kibana</span>
+              <span class="pill">Postman</span>
+              <span class="pill">Jira</span>
+            </div>
+
+            <p class="skill-category">Metodologías</p>
+            <div class="skill-pills">
+              <span class="pill">Clean Architecture / Hexagonal</span>
+              <span class="pill">TDD</span>
+              <span class="pill"><img src="./assets/icons/scrum.png" alt="" width="18" height="18">Agile/Scrum</span>
+              <span class="pill">Code Review</span>
+              <span class="pill">Microservicios/OpenAPI</span>
+            </div>
+
           </div>
         </div>
       </div>
 
-      <!-- Tarjeta Projects -->
+      <!-- Tarjeta Perfil como desarrollador ante la IA -->
       <div class="card" id="red-card">
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
             <button class="btn btn-lg collapsed" id="btn-red-text" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              PET PROJECTS
+              PERFIL COMO DESARROLLADOR ANTE LA IA
             </button>
           </h2>
         </div>
         <div id="collapseFive" class="collapse" aria-labelledby="heading" data-parent="#accordionExample">
           <div class="card-body">
-            <table class="table table-hover">
-              <tbody>
-                <tr>
-                  <td>Python scripting for some regular tasks</td>
-                  <td><img src="./assets/icons/python.png" alt="Python" width="40px" height="40px"></td>
-                </tr>
-                <tr>
-                  <td>Something new</td>
-                  <td>I currently working on something.</td>
-                </tr>
-                <tr>
-                  <td>Check my github</td>
-                  <td>There is other cool stuff im github page</td>
-                </tr>
-              </tbody>
-            </table>
+            <p class="archetype-intro">Boris Cherny (creador de Claude Code) propone seis arquetipos para describir cómo distintos perfiles técnicos se apoyan en agentes de IA. Mi clasificación, con proyectos reales:</p>
+            <ul class="archetype-list">
+              <li>
+                <p class="job-title">Conductor <span class="stars">★★★☆☆</span></p>
+                <p>Orquesto agentes de IA que ejecutan tareas por mí: mi pipeline personal Telegram + Hermes + OpenCode CLI delega tareas de coding según prioridad. Es el eje de mi trabajo actual con agentes.</p>
+              </li>
+              <hr>
+              <li>
+                <p class="job-title">Prototyper <span class="stars">★★★★☆</span></p>
+                <p>Convierto ideas en prototipos funcionales rápido con asistencia de IA — así nació NBA GM Sim.</p>
+              </li>
+              <hr>
+              <li>
+                <p class="job-title">Builder <span class="stars">★★★★★</span></p>
+                <p>Llevo una idea de cero a producto real: Utopía pasó de concepto a app publicada en App Store, en solitario durante 10 meses.</p>
+              </li>
+              <hr>
+              <li>
+                <p class="job-title">Maintainer <span class="stars">★★★★☆</span></p>
+                <p>Sostengo y evoluciono aplicaciones a lo largo del tiempo: las tres apps internas de SOMACYL, con tests y refactor continuos.</p>
+              </li>
+              <hr>
+              <li>
+                <p class="job-title">Sweeper <span class="stars">★★★☆☆</span></p>
+                <p>Reviso y simplifico lo ya construido: refactorizaciones y mejoras de rendimiento apoyadas en IA.</p>
+              </li>
+              <hr>
+              <li>
+                <p class="job-title">Grower <span class="stars">★★☆☆☆</span></p>
+                <p>Menos orientado a crecimiento de mercado por ahora; mi trabajo es mayormente interno o de producto propio.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
