@@ -1,3 +1,20 @@
+:root {
+    --papaya: #ff6f3c;
+    --papaya-dark: #e2551f;
+    --papaya-light: #ffb385;
+    --ink: #1c1c1e;
+    --grey: #404044;
+    --grey-light: #999999;
+}
+
+a {
+    color: var(--papaya-dark);
+}
+
+a:hover {
+    color: var(--papaya);
+}
+
 .background-color{
     background-color: #f1f3f2;
 }
@@ -11,12 +28,48 @@
     width: 100%;
     top: 0px;
     position: relative;
+    border-bottom: 4px solid var(--papaya);
 }
 
 #name{
     max-width: fit-content;
     display: inline-block;
     padding-left: 20%;
+}
+
+#name .lead{
+    color: var(--papaya);
+    font-weight: 600;
+}
+
+#name .subtitle{
+    color: #dcdcdc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#name .contact-line{
+    font-size: 0.9rem;
+    color: #dcdcdc;
+}
+
+#name .contact-line a{
+    color: var(--papaya-light);
+}
+
+#name .contact-line a:hover{
+    color: var(--papaya);
+}
+
+#name .contact-line .dot{
+    color: var(--grey-light);
+    margin: 0 6px;
+}
+
+.perfil-profesional{
+    max-width: 900px;
+    line-height: 1.6;
+    color: var(--ink);
 }
 
 .img{
@@ -53,7 +106,8 @@
 }
 
 .btn:hover{
-    background-color: #999999;
+    background-color: var(--papaya);
+    color: #fff;
 }
 
 .btn{
@@ -65,35 +119,108 @@ li{
     list-style-type: none;
 }
 
+.card{
+    border-top: solid 3px var(--papaya);
+    margin-bottom: 15px;
+}
+
 #yellow-card{
-    border-left: solid 2px #404044;
-    border-right: solid 2px #404044;
+    border-left: solid 2px var(--grey);
+    border-right: solid 2px var(--grey);
 }
 
 #btn-yellow-text{
-    color: #404044;
+    color: var(--grey);
 }
 
 #green-card{
-    border-left: solid 2px #404044;
-    border-right: solid 2px #404044;
+    border-left: solid 2px var(--grey);
+    border-right: solid 2px var(--grey);
 }
 
 #btn-green-text{
-    color: #404044;
+    color: var(--grey);
 }
 
 #red-card{
-    border-left: solid 2px #404044;
-    border-right: solid 2px #404044;
+    border-left: solid 2px var(--grey);
+    border-right: solid 2px var(--grey);
 }
 
 #btn-red-text{
-    color: #404044;
+    color: var(--grey);
 }
 
 .card-header{
     background-color: #f1f3f2;
+}
+
+.card-body hr{
+    border-top: 1px solid var(--papaya-light);
+    opacity: 0.6;
+}
+
+.job-title{
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 2px;
+}
+
+.job-meta{
+    font-size: 0.85rem;
+    color: var(--papaya-dark);
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.skill-category{
+    font-weight: 700;
+    color: var(--ink);
+    border-bottom: 2px solid var(--papaya);
+    display: inline-block;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+.skill-pills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.pill{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #fff5ef;
+    border: 1px solid var(--papaya);
+    color: var(--grey);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    transition: ease .2s;
+}
+
+.pill img{
+    width: 18px;
+    height: 18px;
+}
+
+.pill:hover{
+    background-color: var(--papaya);
+    color: #fff;
+}
+
+.archetype-intro{
+    font-style: italic;
+    color: var(--grey);
+    font-size: 0.9rem;
+}
+
+.stars{
+    color: var(--papaya);
+    letter-spacing: 2px;
 }
 
 /* Redes sociales */
@@ -119,7 +246,7 @@ li{
 }
 
 li a {
-    color: #404044;
+    color: var(--grey);
     border-radius: 6px;
     list-style-type: none;
     display: inline-block;
@@ -127,17 +254,18 @@ li a {
     height: 100px;
     line-height: 100px;
     padding: 1%;
-    border: 1px solid #404044;
+    border: 1px solid var(--grey);
     cursor: pointer;
     margin-left: 10px;
     margin-bottom: 20px;
     transition: ease .3s;
 }
 li a:hover {
-    color: #999999;
-    border: 1px solid #999999;
+    color: #fff;
+    background-color: var(--papaya);
+    border: 1px solid var(--papaya);
 }
-  
+
 
 /* Footer */
 footer {
@@ -146,6 +274,7 @@ footer {
     bottom: 0px;
     width: 100%;
     text-align-last: center;
+    border-top: 3px solid var(--papaya);
 }
 
 /* CSS DEL FORMULARIO*/
@@ -178,22 +307,29 @@ form{
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #4CAF50;
+    background-color: var(--papaya);
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
+
+  /* When moving the mouse over the submit button, add a darker papaya color */
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--papaya-dark);
   }
-  
+
   #btn-form-text{
-    color: #404044;
+    color: #fff;
+    background-color: var(--papaya);
     text-align: center;
+    border-radius: 4px;
+}
+
+  #btn-form-text:hover{
+    background-color: var(--papaya-dark);
+    color: #fff;
 }
 
   /* Animaciones */
