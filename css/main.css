@@ -1,10 +1,10 @@
 :root {
-    --papaya: #ff6f3c;
-    --papaya-dark: #e2551f;
-    --papaya-light: #ffb385;
-    --ink: #1c1c1e;
-    --grey: #404044;
-    --grey-light: #999999;
+    --papaya: #ff9466;
+    --papaya-dark: #d96a3d;
+    --papaya-light: #ffe4d3;
+    --cream: #fffaf6;
+    --ink: #5a4a42;
+    --muted: #a99287;
 }
 
 a {
@@ -16,19 +16,17 @@ a:hover {
 }
 
 .background-color{
-    background-color: #f1f3f2;
+    background-color: var(--cream);
 }
 
 /* Jumbotron */
 .jumbotron {
-    background-image: url("./wallpaper.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    color: #f1f3f2;
+    background: linear-gradient(135deg, #ffe8d9, #ffc9a8);
+    color: var(--ink);
     width: 100%;
     top: 0px;
     position: relative;
-    border-bottom: 4px solid var(--papaya);
+    border-bottom: 3px solid var(--papaya);
 }
 
 #name{
@@ -38,31 +36,31 @@ a:hover {
 }
 
 #name .lead{
-    color: var(--papaya);
+    color: var(--papaya-dark);
     font-weight: 600;
 }
 
 #name .subtitle{
-    color: #dcdcdc;
+    color: var(--ink);
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
 #name .contact-line{
     font-size: 0.9rem;
-    color: #dcdcdc;
+    color: var(--ink);
 }
 
 #name .contact-line a{
-    color: var(--papaya-light);
+    color: var(--papaya-dark);
 }
 
 #name .contact-line a:hover{
-    color: var(--papaya);
+    color: var(--ink);
 }
 
 #name .contact-line .dot{
-    color: var(--grey-light);
+    color: var(--muted);
     margin: 0 6px;
 }
 
@@ -106,8 +104,8 @@ a:hover {
 }
 
 .btn:hover{
-    background-color: var(--papaya);
-    color: #fff;
+    background-color: var(--papaya-light);
+    color: var(--papaya-dark);
 }
 
 .btn{
@@ -121,43 +119,46 @@ li{
 
 .card{
     border-top: solid 3px var(--papaya);
+    border-bottom: none;
     margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(217, 106, 61, 0.08);
 }
 
 #yellow-card{
-    border-left: solid 2px var(--grey);
-    border-right: solid 2px var(--grey);
+    border-left: solid 1px var(--papaya-light);
+    border-right: solid 1px var(--papaya-light);
 }
 
 #btn-yellow-text{
-    color: var(--grey);
+    color: var(--ink);
 }
 
 #green-card{
-    border-left: solid 2px var(--grey);
-    border-right: solid 2px var(--grey);
+    border-left: solid 1px var(--papaya-light);
+    border-right: solid 1px var(--papaya-light);
 }
 
 #btn-green-text{
-    color: var(--grey);
+    color: var(--ink);
 }
 
 #red-card{
-    border-left: solid 2px var(--grey);
-    border-right: solid 2px var(--grey);
+    border-left: solid 1px var(--papaya-light);
+    border-right: solid 1px var(--papaya-light);
 }
 
 #btn-red-text{
-    color: var(--grey);
+    color: var(--ink);
 }
 
 .card-header{
-    background-color: #f1f3f2;
+    background-color: var(--cream);
+    border-bottom: 1px solid var(--papaya-light);
 }
 
 .card-body hr{
     border-top: 1px solid var(--papaya-light);
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .job-title{
@@ -168,8 +169,19 @@ li{
 
 .job-meta{
     font-size: 0.85rem;
-    color: var(--papaya-dark);
+    color: var(--muted);
     font-style: italic;
+    margin-bottom: 4px;
+}
+
+.job-bullets{
+    margin: 6px 0 0 0;
+    padding-left: 18px;
+    color: var(--ink);
+}
+
+.job-bullets li{
+    list-style-type: disc;
     margin-bottom: 4px;
 }
 
@@ -192,34 +204,29 @@ li{
 .pill{
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    background-color: #fff5ef;
-    border: 1px solid var(--papaya);
-    color: var(--grey);
+    background-color: var(--papaya-light);
+    border: 1px solid var(--papaya-light);
+    color: var(--ink);
     border-radius: 20px;
     padding: 4px 12px;
     font-size: 0.85rem;
     transition: ease .2s;
 }
 
-.pill img{
-    width: 18px;
-    height: 18px;
-}
-
 .pill:hover{
     background-color: var(--papaya);
+    border-color: var(--papaya);
     color: #fff;
 }
 
 .archetype-intro{
     font-style: italic;
-    color: var(--grey);
+    color: var(--muted);
     font-size: 0.9rem;
 }
 
 .stars{
-    color: var(--papaya);
+    color: var(--papaya-dark);
     letter-spacing: 2px;
 }
 
@@ -245,8 +252,8 @@ li{
     display: inline-block;
 }
 
-li a {
-    color: var(--grey);
+.social li a {
+    color: var(--papaya-dark);
     border-radius: 6px;
     list-style-type: none;
     display: inline-block;
@@ -254,13 +261,13 @@ li a {
     height: 100px;
     line-height: 100px;
     padding: 1%;
-    border: 1px solid var(--grey);
+    border: 1px solid var(--papaya-light);
     cursor: pointer;
     margin-left: 10px;
     margin-bottom: 20px;
     transition: ease .3s;
 }
-li a:hover {
+.social li a:hover {
     color: #fff;
     background-color: var(--papaya);
     border: 1px solid var(--papaya);
@@ -269,12 +276,13 @@ li a:hover {
 
 /* Footer */
 footer {
-    color: #f1f3f2;
+    color: var(--ink);
+    background-color: var(--cream);
     position: fixed;
     bottom: 0px;
     width: 100%;
     text-align-last: center;
-    border-top: 3px solid var(--papaya);
+    border-top: 2px solid var(--papaya-light);
 }
 
 /* CSS DEL FORMULARIO*/
